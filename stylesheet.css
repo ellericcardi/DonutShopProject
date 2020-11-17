@@ -73,6 +73,7 @@ nav {
 main {
     grid-area: main;
     align-content: center;
+    padding-bottom: 210px;
     }
 
 footer {
@@ -89,8 +90,7 @@ footer {
 }
 
 .map {
-    grid-column: 1/2;
-    
+    grid-column: 1/2;   
 }
 
 .contact {
@@ -101,4 +101,9 @@ footer {
 
 .social {
     grid-column: 3/4;
+}
+
+.test {
+    grid-area: aside;
+    background-color: red;
 }
