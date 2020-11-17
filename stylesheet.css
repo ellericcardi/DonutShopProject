@@ -30,45 +30,45 @@ nav {
     place-items: center;
 }
 
-.logo img {
-    grid-column: 1/2;
-    max-width: 200px;
-    max-height: 150px;     
-}
+    .logo img {
+        grid-column: 1/2;
+        max-width: 200px;
+        max-height: 150px;     
+    }
 
-.logo:hover {
-    transition: background-color .5s ease;
-    background-color: #904c77;    
-}
+    .logo:hover {
+        transition: background-color .5s ease;
+        background-color: #904c77;    
+    }
 
-.menulinks {
-    grid-column: 2/3;
-    color: white;
-    font-size: 1.5em;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-items: space-between;         
-}
+    .menulinks {
+        grid-column: 2/3;
+        color: white;
+        font-size: 1.5em;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-items: space-between;         
+    }
 
-.menulinks>ul {
-    display: flex;    
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-items: space-between;   
-}
+    .menulinks>ul {
+        display: flex;    
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-items: space-between;   
+    }
 
-.menulinks a {
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-    
-}
+    .menulinks a {
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        
+    }
 
-.menulinks a:hover {
-    transition: color .5s ease;
-    color:#904c77;
-}
+    .menulinks a:hover {
+        transition: color .5s ease;
+        color:#904c77;
+    }
 
 main {
     grid-area: main;
@@ -84,44 +84,42 @@ main {
 
     }
 
-
-
-.flavoroftheweek {
-    grid-area: flavor;  
-    justify-content:right;    
-    list-style: square;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.donutfotw {
-    color: white;
-    background-color: #E49AB0;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-    min-width: 250px;  
+    .flavoroftheweek {
+        grid-area: flavor;  
+        justify-content:right;    
+        list-style: square;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
-.donutfotw:hover {
-    transition: .5s ease;
-    background-color: #904c77;
-}
+    .donutfotw {
+        color: white;
+        background-color: #E49AB0;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        min-width: 250px;  
+        }
 
-.coffeefotw {
-    color: white;
-    background-color: #E49AB0;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-    min-width: 250px;    
-}
+    .donutfotw:hover {
+        transition: .5s ease;
+        background-color: #904c77;
+    }
 
-.coffeefotw:hover {
-    transition: .5s ease;
-    background-color: #904c77;
-}
+    .coffeefotw {
+        color: white;
+        background-color: #E49AB0;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        min-width: 250px;    
+    }
+
+    .coffeefotw:hover {
+        transition: .5s ease;
+        background-color: #904c77;
+    }
 
 footer {
     color: white;
@@ -135,16 +133,16 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;    
 }
-.map {
-    grid-column: 1/2;   
-}
+    .map {
+        grid-column: 1/2;   
+    }
 
-.contact {
-    grid-column: 2/3;
-    display: flex;
-    flex-wrap: wrap;
-}
+    .contact {
+        grid-column: 2/3;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-.social {
-    grid-column: 3/4;
-}
+    .social {
+        grid-column: 3/4;
+    }
