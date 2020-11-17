@@ -12,7 +12,7 @@ body {
     display:grid;
     grid-template-areas:
         "header header header"
-        ". main ."
+        ". main aside"
         "footer footer footer";
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 150px 1fr 200px;
@@ -51,7 +51,7 @@ nav {
     justify-items: space-between;         
 }
 
-.menulinks ul {
+.menulinks>ul {
     display: flex;    
     flex-direction: row;
     flex-wrap: wrap;
@@ -73,8 +73,55 @@ nav {
 main {
     grid-area: main;
     align-content: center;
-    padding-bottom: 210px;
+    padding-top: 20px;
+    
+    display: grid;
+    grid-template-areas:
+    "intro intro "
+    "flavor flavor";
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+
     }
+
+
+
+.flavoroftheweek {
+    grid-area: flavor;  
+    justify-content:right;    
+    list-style: square;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.donutfotw {
+    color: white;
+    background-color: #E49AB0;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    min-width: 250px;  
+    }
+
+.donutfotw:hover {
+    transition: .5s ease;
+    background-color: #904c77;
+}
+
+.coffeefotw {
+    color: white;
+    background-color: #E49AB0;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    min-width: 250px;    
+}
+
+.coffeefotw:hover {
+    transition: .5s ease;
+    background-color: #904c77;
+}
 
 footer {
     color: white;
@@ -88,7 +135,6 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;    
 }
-
 .map {
     grid-column: 1/2;   
 }
@@ -101,9 +147,4 @@ footer {
 
 .social {
     grid-column: 3/4;
-}
-
-.test {
-    grid-area: aside;
-    background-color: red;
 }
