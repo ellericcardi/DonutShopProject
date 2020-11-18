@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    list-style: none;    
+}
+
+body {
+    height: 100vh;
+    display:grid;
+    grid-template-areas:
+        "header header header"
+        ". main aside"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 150px 1fr 200px;
+   }
+
+header {
+    grid-area: header;
+    background-color:#E49AB0;
+    padding: 20px;      
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+    .logo img {
+        grid-column: 1/2;
+        max-width: 200px;
+        max-height: 150px;     
+    }
+
+    .logo:hover {
+        transition: background-color .5s ease;
+        background-color: #904c77;    
+    }
+
+    .menulinks {
+        grid-column: 2/3;
+        color: white;
+        font-size: 1.5em;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-items: flex-start;         
+    }
+
+    .menulinks>ul {
+        display: flex;    
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-items: space-between;   
+    }
+
+    .menulinks a {
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+    }
+
+    .menulinks a:hover {
+        transition: color .5s ease;
+        color:#904c77;
+    }
+
+main {
+    grid-area: main;
+    align-content: center;
+    padding-top: 20px;
+    display: grid;
+    grid-template-areas:
+    "intro flavor"
+    "intro flavor";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    }
+
+    .intro {
+        align-content: center;
+        
+    }
+
+    .intro h1 {
+        color: #904c77;
+        padding: 10px;
+    }
+
+    .intro img {
+        width: 250px;
+        float: left;
+        margin-right: 20px;
+    }
+
+    .flavoroftheweek {
+        grid-area: flavor;  
+        justify-content:center; 
+        align-content: flex-start;   
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .donutfotw {
+        color: white;
+        background-color: #904c77;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        min-width: 250px;
+        max-height: 100px;  
+    }
+
+    .donutfotw:hover {
+        transition: .5s ease;
+        background-color: #E49AB0;
+    }
+
+    .coffeefotw {
+        color: white;
+        background-color:#904c77;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        min-width: 250px;
+        max-height: 100px;     
+    }
+
+    .coffeefotw:hover {
+        transition: .5s ease;
+        background-color: #E49AB0;
+    }
+
+footer {
+    color: white;
+    grid-area: footer;
+    background-color: #E49AB0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;    
+}
+    .map {
+        grid-column: 1/2;   
+    }
+
+    .contact {
+        grid-column: 2/3;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .social {
+        grid-column: 3/4;
+    }
