@@ -74,20 +74,38 @@ main {
     grid-area: main;
     align-content: center;
     padding-top: 20px;
-    
     display: grid;
     grid-template-areas:
-    "intro intro "
-    "flavor flavor";
-    grid-template-columns: 1fr;
+    "intro flavor"
+    "intro flavor";
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 3fr 1fr;
+    }
 
+    .intro {
+        align-content: center;
+        
+    }
+
+    .intro h1 {
+        color: #904c77;
+        padding: 10px;
+    }
+
+    .intro p {
+
+    }
+
+    .intro img {
+        width: 250px;
+        float: left;
+        margin-right: 20px;
     }
 
     .flavoroftheweek {
         grid-area: flavor;  
-        justify-content:right;    
-        list-style: square;
+        justify-content:center; 
+        align-content: flex-start;   
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -95,30 +113,32 @@ main {
 
     .donutfotw {
         color: white;
-        background-color: #E49AB0;
+        background-color: #904c77;
         border-radius: 10px;
         margin: 10px;
         padding: 10px;
-        min-width: 250px;  
+        min-width: 250px;
+        max-height: 100px;  
         }
 
     .donutfotw:hover {
         transition: .5s ease;
-        background-color: #904c77;
+        background-color: #E49AB0;
     }
 
     .coffeefotw {
         color: white;
-        background-color: #E49AB0;
+        background-color:#904c77;
         border-radius: 10px;
         margin: 10px;
         padding: 10px;
-        min-width: 250px;    
+        min-width: 250px;
+        max-height: 100px;     
     }
 
     .coffeefotw:hover {
         transition: .5s ease;
-        background-color: #904c77;
+        background-color: #E49AB0;
     }
 
 footer {
