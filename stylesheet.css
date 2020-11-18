@@ -26,7 +26,7 @@ header {
 
 nav {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     place-items: center;
 }
 
@@ -48,7 +48,7 @@ nav {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-items: space-between;         
+        justify-items: flex-start;         
     }
 
     .menulinks>ul {
@@ -119,7 +119,7 @@ main {
         padding: 10px;
         min-width: 250px;
         max-height: 100px;  
-        }
+    }
 
     .donutfotw:hover {
         transition: .5s ease;
