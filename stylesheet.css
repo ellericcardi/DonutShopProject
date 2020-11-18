@@ -62,7 +62,6 @@ nav {
         text-decoration: none;
         color: white;
         padding: 20px;
-        
     }
 
     .menulinks a:hover {
@@ -90,10 +89,6 @@ main {
     .intro h1 {
         color: #904c77;
         padding: 10px;
-    }
-
-    .intro p {
-
     }
 
     .intro img {
