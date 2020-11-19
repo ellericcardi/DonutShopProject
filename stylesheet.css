@@ -211,6 +211,21 @@ nav {
         padding: 10px;
     }
 
+.about {
+    grid-area: main;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    place-content: center;
+}
+    .about h1 {
+        align-self: center;
+    }
+
+    .about img {
+        float: left;
+        margin-right: 20px;
+        max-width: 300px;
+    }
 
 footer {
     color: white;
