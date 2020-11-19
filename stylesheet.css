@@ -142,7 +142,7 @@ nav {
     "menu"
     "gallery";
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
 }
     .donutmenu {
         padding-top: 40px;
@@ -151,7 +151,11 @@ nav {
         justify-content: center;
         display: flex;
         flex-direction: row;
-        
+     
+    }
+
+    .donutmenu div {
+        padding: 20px;
     }
 
    
@@ -160,14 +164,53 @@ nav {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-content: flex-start;
+        align-items: flex-start;
         justify-content: space-between;
     }
 
     .donutgallery img {
+        justify-self: start;
         max-width: 250px;
+        max-height: 250px;
         padding: 10px;
     }
+
+.drinks {
+    grid-area: main;
+    display:grid;
+    grid-template-areas:
+    "menu"
+    "gallery";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+    .drinksmenu {
+        padding-top: 40px;
+        grid-area: menu;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .drinksmenu div {
+        padding: 20px;
+    }
+    .drinkgallery{
+        grid-area: gallery;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .drinkgallery img {
+        justify-self: start;
+        max-width: 250px;
+        max-height: 250px;
+        padding: 10px;
+    }
+
 
 footer {
     color: white;
