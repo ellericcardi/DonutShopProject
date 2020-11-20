@@ -51,17 +51,20 @@ nav {
         justify-items: flex-start;         
     }
 
-    .menulinks>ul {
+    .menulinks ul {
         display: flex;    
         flex-direction: row;
         flex-wrap: wrap;
-        justify-items: space-between;   
+        justify-content: space-between; 
     }
-
+   
+    .menulinks li {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .menulinks a {
         text-decoration: none;
-        color: white;
-        padding: 20px;
+        color: white;        
     }
 
     .menulinks a:hover {
@@ -151,6 +154,7 @@ nav {
         justify-content: center;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
      
     }
 
@@ -194,7 +198,7 @@ nav {
         flex-direction: row;
     }
     .drinksmenu div {
-        padding: 20px;
+        padding-right: 30px;
     }
     .drinkgallery{
         grid-area: gallery;
@@ -225,6 +229,67 @@ nav {
         float: left;
         margin-right: 20px;
         max-width: 300px;
+    }
+
+.contactpage {
+    grid-area: main;
+    margin: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    place-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    }
+
+    .contactform {
+        max-width: 40vw;
+        max-height: 50vh;
+        background-color: #904c77;
+        color: white;
+        padding: 3em;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* place-items: center; */
+        
+        /* align-content: space-around; */
+    }
+
+    .contactform h1 {
+        padding-top: .5rem;
+        align-self: center;
+        
+    }
+
+    .cfitems {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .cfname, .cfemail, .cfmessage, .submit {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+    textarea {
+        resize: none;
+    }
+   
+    input[type=submit] {
+        padding: 5px 10px 5px 10px;
+                color: #904c77;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    input[type=submit]:hover {
+        color: white;
+        background-color: #E49ab0;
+        transition: background-color .5s ease;
+        transition: color .5s ease;
     }
 
 footer {
