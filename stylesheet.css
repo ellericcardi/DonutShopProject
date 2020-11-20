@@ -176,7 +176,7 @@ nav {
         margin: .5rem;
         max-width: 33%;
         min-width: 150px;
-        max-height: 33%;
+        /* max-height: 33%; */
         border-radius: 10px;
         color: white;
     }
@@ -229,7 +229,7 @@ nav {
         padding: 1rem;
         margin: .5rem;
         max-width: 33%;
-        max-height: 33%;
+        /* max-height: 33%; */
         min-width: 175px;
         border-radius: 10px;
         color: white;
@@ -368,7 +368,7 @@ footer {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            justify-content: flex-start;
+            place-content: flex-start;
         }
 
         main {
@@ -381,6 +381,10 @@ footer {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
+        }
+
+        li:active {
+            color: #904c77;
         }
 
         .logo {
