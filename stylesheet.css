@@ -89,7 +89,7 @@ nav {
         
     }
 
-    .intro h1 {
+    h1 {
         color: #904c77;
         padding: 10px;
     }
@@ -159,9 +159,19 @@ nav {
     }
 
     .donutmenu div {
-        padding: 20px;
+        background-color: #E49AB0;
+        padding: 1rem;
+        margin: .5rem;
+        max-width: 33%;
+        min-width: 150px;
+        max-height: 33%;
+        border-radius: 10px;
+        color: white;
     }
-
+    .donutmenu div:hover {
+        background-color: #904C77;
+        transition: background-color .5s ease;
+    }
    
     .donutgallery {
         grid-area: gallery;
@@ -174,8 +184,9 @@ nav {
 
     .donutgallery img {
         justify-self: start;
-        max-width: 250px;
-        max-height: 250px;
+        max-width: 25%;
+        min-width: 200px;
+        max-height: 50%;
         padding: 10px;
     }
 
@@ -187,31 +198,48 @@ nav {
     "gallery";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
+    
 }
 
     .drinksmenu {
-        padding-top: 40px;
+        margin-top: 40px;
         grid-area: menu;
-        display: flex;
-        justify-content: center;
+        display: flex;       
         flex-wrap: wrap;
         flex-direction: row;
+        place-content: center;
     }
+    
     .drinksmenu div {
-        padding-right: 30px;
+        background-color: #E49AB0;
+        padding: 1rem;
+        margin: .5rem;
+        max-width: 33%;
+        max-height: 33%;
+        min-width: 175px;
+        border-radius: 10px;
+        color: white;
     }
-    .drinkgallery{
+
+    .drinksmenu div:hover {
+        background-color: #904C77;
+        transition: background-color .5s ease;
+    }
+   
+    .drinkgallery {
         grid-area: gallery;
         align-items: flex-start;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        max-height: 67%;
     }
     .drinkgallery img {
         justify-self: start;
-        max-width: 250px;
-        max-height: 250px;
+        max-width: 25%;
+        min-width: 200px;
+        max-height: 200px;
         padding: 10px;
     }
 
